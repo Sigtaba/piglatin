@@ -19,26 +19,37 @@ $(function() {
     for (var index = 0; index < vowels.length; index += 1) {
 
       if (word[0] === vowels[index]) {
-      word += "way"
+        word2 = word += "way"
 
       }
 
+      if (word[0] === vowels[index]) { break };
 
-      if (word[0] !== vowels[index]){
+      if  (word[0] !== vowels[index]){
         consonant = word.charAt(0).slice(-1);
         word2 = word.replace(word[0],"") + consonant + "ay";
+
       }
 
-      if (word[1] !== vowels[index]){
+      else if ((word[0] !== vowels[index]) && (word[1] !== vowels[index])){
          consonant = word.charAt(0).slice(-1);
          consonant2 = word.charAt(1).slice(-1);
          word2 = word.replace(word[0], "").replace(word[1], "") + consonant + consonant2 + "ay";
-       }
+
+      }
+
+       else if ((word[0] !== vowels[index]) && (word[1] !== vowels[index]) && (word[2] !== vowels[index])){
+          consonant = word.charAt(0).slice(-1);
+          consonant2 = word.charAt(1).slice(-1);
+          consonant3 = word.charAt(2).slice(-1);
+          word2 = word.replace(word[0], "").replace(word[1], "").replace(word[2], "") + consonant + consonant2 + consonant3 + "ay";
+
+      }
+
       //
     }
-    alert(word2);
       // }
-
+    $("#pigLatin").text(word2);
     // // if (splitLetters#includes(!letters));
     // //   $("#hatwobble").show();
 
