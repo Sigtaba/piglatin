@@ -25,20 +25,20 @@ $(function() {
 
       if (word[0] === vowels[index]) { break };
 
-      if  (word[0] !== vowels[index]){
+      if  (word[0] !== vowels[index]) {
         consonant = word.charAt(0).slice(-1);
         word2 = word.replace(word[0],"") + consonant + "ay";
 
       }
 
-      else if ((word[0] !== vowels[index]) && (word[1] !== vowels[index])){
+      else if (word[1] !== vowels[index]) {
          consonant = word.charAt(0).slice(-1);
          consonant2 = word.charAt(1).slice(-1);
          word2 = word.replace(word[0], "").replace(word[1], "") + consonant + consonant2 + "ay";
 
       }
 
-       else if ((word[0] !== vowels[index]) && (word[1] !== vowels[index]) && (word[2] !== vowels[index])){
+       else if (word[2] !== vowels[index]) {
           consonant = word.charAt(0).slice(-1);
           consonant2 = word.charAt(1).slice(-1);
           consonant3 = word.charAt(2).slice(-1);
