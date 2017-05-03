@@ -1,12 +1,12 @@
-# _Epicodus Track Suggester_
+# _Pig Latin Translator_
 
-#### _HTML CSS and JavaScript Webpage,_ _4.28.2017_
+#### _HTML CSS and JavaScript Webpage,_ _05.03.2017_
 
-#### By _**Isabella Abatgis**_
+#### By _**Isabella Abatgis and Calvin Cushman**_
 
 ## Description
 
-This a website that determines which Epicodus course track to take depending on what the user inputs. View at: https://sigtaba.github.io/track-suggester
+This a website that translates user input into pig latin if certain conditions are met.
 
 ## Specs
 
@@ -69,7 +69,7 @@ This a website that determines which Epicodus course track to take depending on 
 
 ## Support and contact details
 
-_Please contact abatgis@gmail.com with any bugs or issues._
+_Turn it off & turn it back on again._
 
 ## Technologies Used
 
@@ -87,4 +87,4 @@ _JQuery_
 
 *MIT*
 
-Copyright (c) 2017 **_Isabella Abatgis_**
+Copyright (c) 2017 **_Isabella Abatgis_ & _Calvin Cushman_**

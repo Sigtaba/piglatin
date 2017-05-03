@@ -1,28 +1,49 @@
-var userInput = [];
-var splitWords = [];
-var splitLetters = [];
+var userInput ;
 var vowels = ["a", "e", "i", "o", "u"];
 var consonants = ["q", "w", "r", "t", "y", "p", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
 var letters = [vowels + consonants];
+var word ;
+var word2 ;
 
+var consonant ;
 
 $(function() {
-  alert(letters);
+
+//collect user input//
+
   $("#formOne").submit(function(event) {
+    userInput = $("#sentence").val();
 
-    var splitLetters2 = splitLetters
-    splitLetters = userInput.split("");
+    word = userInput;
 
-    for (var index = 0 index < vowels.length; index +1) {
-      splitLetters2 = splitLetters2.find(vowels[index].replace(splitLetters2 + "way");
+    for (var index = 0; index < vowels.length; index += 1) {
 
+      if (word[0] === vowels[index]) {
+      word += "way"
+
+      }
+
+
+      if (word[0] !== vowels[index]){
+        consonant = word.charAt(0).slice(-1);
+        word2 = word.replace(word[0],"") + consonant + "ay";
+      }
+
+      if (word[1] !== vowels[index]){
+         consonant = word.charAt(0).slice(-1);
+         consonant2 = word.charAt(1).slice(-1);
+         word2 = word.replace(word[0], "").replace(word[1], "") + consonant + consonant2 + "ay";
+       }
+      //
     }
+    alert(word2);
+      // }
 
-    if (splitString !== letters)
-      $(celeryman dancing)
+    // // if (splitLetters#includes(!letters));
+    // //   $("#hatwobble").show();
 
-    event.preventDefault;
+    event.preventDefault();
 
-    $("input")
+    // $("input")
   })
 })
