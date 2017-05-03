@@ -1,27 +1,28 @@
-// business logic
-var leapYear = function(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-    return true;
-  } else {
-    return false;
-  }
-};
+var userInput = [];
+var splitWords = [];
+var splitLetters = [];
+var vowels = ["a", "e", "i", "o", "u"];
+var consonants = ["q", "w", "r", "t", "y", "p", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
+var letters = [vowels + consonants];
 
-// user interface logic
-$(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
-    event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
 
-    $(".year").text(year);
+$(function() {
+  alert(letters);
+  $("#formOne").submit(function(event) {
 
-    if (!result) {                 // same as writing if (result === false)
-      $(".not").text("not");
-    } else {
-      $(".not").text("");
+    var splitLetters2 = splitLetters
+    splitLetters = userInput.split("");
+
+    for (var index = 0 index < vowels.length; index +1) {
+      splitLetters2 = splitLetters2.find(vowels[index].replace(splitLetters2 + "way");
+
     }
 
-    $("#result").show();
-  });
-});
+    if (splitString !== letters)
+      $(celeryman dancing)
+
+    event.preventDefault;
+
+    $("input")
+  })
+})
